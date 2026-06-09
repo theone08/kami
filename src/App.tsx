@@ -20,10 +20,12 @@ import BuyView from './components/BuyView';
 import TrackView from './components/TrackView';
 import SupportView from './components/SupportView';
 import AdminView from './components/AdminView';
+import AdminLoginView from './components/AdminLoginView';
 
 export default function App() {
   const [currentView, setCurrentView] = useState<ViewType>('home');
   const [selectedTierId, setSelectedTierId] = useState<string>('month');
+  const [isAdminAuthenticated, setIsAdminAuthenticated] = useState<boolean>(false);
 
   // Load and preserve data state natively from local storage
   const [tiers, setTiers] = useState<CardTier[]>([]);
@@ -194,15 +196,19 @@ export default function App() {
         )}
 
         {currentView === 'admin' && (
-          <AdminView 
-            tiers={tiers}
-            orders={orders}
-            stats={stats}
-            onModifyTiers={handleModifyTiers}
-            onUpdateOrders={setOrders}
-            onTriggerRefund={handleTriggerRefund}
-            onExportReports={handleExportReports}
-          />
+          isAdminAuthenticated ? (
+            <AdminView 
+              tiers={tiers}
+              orders={orders}
+              stats={stats}
+              onModifyTiers={handleModifyTiers}
+              onUpdateOrders={setOrders}
+              onTriggerRefund={handleTriggerRefund}
+              onExportReports={handleExportReports}
+            />
+          ) : (
+            <AdminLoginView onLoginSuccess={() => setIsAdminAuthenticated(true)} />
+          )
         )}
       </main>
 
