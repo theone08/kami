@@ -1,0 +1,6 @@
+{
+  "name": "Tdone 官方发卡与交易系统",
+  "description": "专业的 Tdone 自动化软件官方授权卡密分发平台，集成了快速发卡、订单查询和管理后台。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
