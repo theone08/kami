@@ -29,11 +29,11 @@ export default function AdminLoginView({ onLoginSuccess }: AdminLoginViewProps) 
 
     // Simulate server side verification delay
     setTimeout(() => {
-      // Set default high-security password to 'admin888'
-      if (password === 'admin888') {
+      // Set default high-security password to '19980828Td.'
+      if (password === '19980828Td.') {
         onLoginSuccess();
       } else {
-        setErrorText('密码校验错误！请输入官方预置管理员密码（提示：admin888）');
+        setErrorText('密码校验错误！请输入官方预置管理员密码');
         setIsSubmitting(false);
       }
     }, 800);
@@ -70,7 +70,7 @@ export default function AdminLoginView({ onLoginSuccess }: AdminLoginViewProps) 
           <p className="leading-relaxed">
             默认管理员安全登录主密码已置为：
             <span className="text-[#45e3ce] font-bold font-mono px-1.5 py-0.5 bg-[#45e3ce]/10 rounded ml-1 select-all">
-              admin888
+              19980828Td.
             </span>
           </p>
         </div>
@@ -85,7 +85,7 @@ export default function AdminLoginView({ onLoginSuccess }: AdminLoginViewProps) 
               <input
                 id="admin-password-field"
                 type={showPassword ? 'text' : 'password'}
-                placeholder="请输入密码 admin888"
+                placeholder="请输入密码 19980828Td."
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 disabled={isSubmitting}
