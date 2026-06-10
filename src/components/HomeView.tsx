@@ -85,11 +85,11 @@ export default function HomeView({ tiers, announcements, onSelectTier, onNavigat
                 </span>
                 
                 <h1 className="font-sans text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#dae2fd] select-none tracking-tight">
-                  Tdone 自动化办公软件
+                  Tdone 自动跑图
                 </h1>
                 
                 <p className="font-sans text-sm text-[#bdc8d1] leading-relaxed">
-                  Tdone 是一款专为企事业、个人工作者设计的高级自动化办公工具。支持大规模并行运算任务，极速响应，让您的生产力成倍提升。内置丰富的脚本向导和数据接口，免去复杂配置，开箱即用。
+                  Tdone 自动跑图,分钟材料,刷级辅助。
                 </p>
 
                 {/* Bullets feature list */}
@@ -124,7 +124,7 @@ export default function HomeView({ tiers, announcements, onSelectTier, onNavigat
                 <div className="relative w-full h-full rounded-xl overflow-hidden bg-[#222a3d] border border-[#3e484f] group-hover:border-[#38bdf8]/40 transition-colors shadow-lg">
                   <img 
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0QcVhrMKUPNyeeuBzfxqSQUlHu3YZ5uohwBApYY4QhaZgtSv-7fjNvD40rIY7gG9VTSW-P-glILORJ5NAPFiwdiJh_P04nlzBFitlJ0Bu62rTQAg-ST6WD9HOOyXI7eVzsHK_IWCPhiThf9NY7GfHe1a2dtrg82haGccfeJYLNFo3kfW_PGZKgOUkmgrivkXh6d4bfR6U6gwlILXt8aHAHZVxNawYSBwRI2AyvPPBFBAuWvonB5sHZs5f8TcAuX9pXaq8tSKhmzCY" 
-                    alt="Tdone 自动化控制软件主界面" 
+                    alt="Tdone 自动跑图" 
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover opacity-80 group-hover:scale-102 transition-transform duration-700"
                   />
