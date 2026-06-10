@@ -85,7 +85,7 @@ export default function AdminLoginView({ onLoginSuccess }: AdminLoginViewProps) 
               <input
                 id="admin-password-field"
                 type={showPassword ? 'text' : 'password'}
-                placeholder="请输入密码 19980828Td."
+                placeholder="请输入密码"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 disabled={isSubmitting}
