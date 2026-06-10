@@ -68,9 +68,9 @@ export default function AdminLoginView({ onLoginSuccess }: AdminLoginViewProps) 
             演示授权凭证提示:
           </p>
           <p className="leading-relaxed">
-            默认管理员安全登录主密码已置为：
+            管理员安全登录主密码：
             <span className="text-[#45e3ce] font-bold font-mono px-1.5 py-0.5 bg-[#45e3ce]/10 rounded ml-1 select-all">
-              19980828Td.
+              生日
             </span>
           </p>
         </div>
